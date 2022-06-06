@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: steelblue;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+body .container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+body .containerh1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+body .container form .form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+body .container form .form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+body .container form .form-control input:focus {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+body .container form .form-control input:focus + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+body .container form .form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+body .container form .form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+body .container form .form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+body .container form .form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+body .container form .btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+body .container form .btn:focus {
+  outline: 0;
+}
+body .container form .btn:active {
+  transform: scale(0.99);
+}
+body .container .text {
+  margin-top: 30px;
+}
+body .container .text a {
+  text-decoration: none;
+  color: lightblue;
+}
